@@ -57,13 +57,15 @@ if(MINGW)
 endif()
 
 # Boost setup.
+
 include(YACMAPythonSetup)
 list(APPEND PAGMO_PLUGINS_NONFREE_REQUIRED_BOOST_LIBS system filesystem)
 if(PAGMO_PLUGINS_NONFREE_BUILD_PYTHON)
     list(APPEND PAGMO_PLUGINS_NONFREE_REQUIRED_BOOST_LIBS python3)
 endif()
 message(STATUS "Required Boost libraries: ${PAGMO_PLUGINS_NONFREE_REQUIRED_BOOST_LIBS}")
-find_package(Boost 1.55.0 REQUIRED COMPONENTS "${PAGMO_PLUGINS_NONFREE_REQUIRED_BOOST_LIBS}")
+set(BOOST_ROOT $HOME/local/)
+find_package(Boost 1.61.0 REQUIRED COMPONENTS "${PAGMO_PLUGINS_NONFREE_REQUIRED_BOOST_LIBS}")
 if(NOT Boost_FOUND)
     message(FATAL_ERROR "Not all requested Boost components were found, exiting.")
 endif()
