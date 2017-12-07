@@ -17,9 +17,9 @@
 
 #include <pagmo_plugins_nonfree/snopt7.hpp>
 
-#define SNOPT_FOLDER "/home/bala/pkgs/snopt-interface/lib/"
+//#define SNOPT_FOLDER "/home/bala/pkgs/snopt-interface/lib/"
 //#define SNOPT_FOLDER "./"
-
+#define SNOPT_FOLDER "/usr/local/lib/"
 using namespace pagmo;
 
 // a throwing problem. It throws every 50 evals
