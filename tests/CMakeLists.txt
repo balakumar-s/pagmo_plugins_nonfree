@@ -15,3 +15,4 @@ endfunction()
 
 # Tests
 ADD_PAGMO_SNOPT7_TESTCASE(snopt7)
+ADD_PAGMO_SNOPT7_TESTCASE(snopt7_lib_test)

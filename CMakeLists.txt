@@ -16,7 +16,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # Build option: enable test set.
-option(PAGMO_PLUGINS_NONFREE_BUILD_TESTS "Build test set." OFF)
+option(PAGMO_PLUGINS_NONFREE_BUILD_TESTS "Build test set." ON)
 
 # Build option: enable python module.
 option(PAGMO_PLUGINS_NONFREE_BUILD_PYTHON "Build the python module." OFF)
